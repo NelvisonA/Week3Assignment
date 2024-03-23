@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <!--Here, I am making the navbar container with a logo which is the home link-->
+    <nav class="navbar navbar-expand-sm bg-secondary">
+        <a class="navbar-brand" href="/index.html">
+            <h1 class="text-warning">
+                Foodie
+            </h1>
+        </a>
+    <!--Here, I made an unordered list to make list items as my navbar links-->
+        <ul class="navbar-nav">
+            <!--This is the dropdown link on my navbar-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-warning" href="" 
+                role="button" data-bs-toggle="dropdown" 
+                aria-expanded="false">
+                Recipes
+                </a>
+                <!--This is the other items inside the dropdown menu-->
+                <ul class="dropdown-menu bg-secondary">
+                    <li><a class="dropdown-item text-warning" href="/grilledcheese.html">Grilled Cheese</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item text-warning" href="/secretformula.html">Secret Formula</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item text-warning" href="/tomatosoup.html">Tomato Soup</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link text-warning" href="/about.html">About</a></li>
+        </ul>
+    </nav>
+    <div class="container table-responsive-sm">
+        <h3 class="text-center mt-5">Objective Table!</h3>
+    <table class="table table-stripped table-bordered border-warning">
+        <tr>
+            <th>Best</th>
+            <th>Mid</th>
+            <th>Bad</th>
+        </tr>
+        <tr>
+            <td>Secret Formula</td>
+            <td>Grilled Cheese</td>
+            <td>Tomato Soup</td>
+        </tr>
+    </table>
+    </div>
+    <!--Here, I make a form with a few options using bootstrap.-->
+    <form class="container mt-5">
+        <h3>Which is best?</h3>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="RadioOption" id="RadioOption1" value="Secret Formula">
+        <label class="form-check-radio" for="RadioOption1">
+            Secret Formula
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="RadioOption" id="RadioOption2" value="Secret Formula 2">
+        <label class="form-check-radio" for="RadioOption2">
+            Secret Formula but option 2
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="RadioOption" id="RadioOption3" value="Secret Formula 3">
+        <label class="form-check-radio" for="RadioOption3">
+            Secret Formula but option 3
+        </label>
+    </div>
+    <input class="btn btn-secondary" type="submit" value="Submit">
+    </form>
+
+    <footer class="bg-secondary fixed-bottom">
+        <p class="text-center">© 2024 Copyright</p>
+    </footer>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
